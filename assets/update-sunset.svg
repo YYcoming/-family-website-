@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="title desc">
+  <title id="title">湖边晚霞</title>
+  <desc id="desc">橘粉色的晚霞倒映在平静的湖面上</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7e8e97"/>
+      <stop offset=".4" stop-color="#d89980"/>
+      <stop offset=".75" stop-color="#efb277"/>
+      <stop offset="1" stop-color="#f4cf9d"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bea28f"/>
+      <stop offset="1" stop-color="#566b70"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#ffe0a2" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#f2b56d" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".7" numOctaves="2" stitchTiles="stitch"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .055"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="720" height="560" fill="url(#sky)"/>
+  <circle cx="503" cy="286" r="150" fill="url(#glow)" filter="url(#blur)"/>
+  <circle cx="503" cy="286" r="46" fill="#f6d292"/>
+  <g fill="#f9d6ae" opacity=".34">
+    <path d="M20 140c80-35 147-38 221-11-69 17-143 31-221 11Z"/>
+    <path d="M305 90c58-26 119-28 174-6-56 16-114 23-174 6Z"/>
+  </g>
+  <path d="M0 303c89-30 147-23 229 3 76-33 166-34 252 0 91-30 169-28 239 1v54H0Z" fill="#6d7777" opacity=".55"/>
+  <path d="M0 330c97-29 191-18 283 10 134-40 281-33 437 6v214H0Z" fill="url(#water)"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M323 365h270M257 387h323M345 411h198M292 438h354M376 465h216" stroke="#f3c78f" stroke-width="4" opacity=".48"/>
+    <path d="M20 350h242M485 351h199M62 375h200M514 391h159M44 424h235M43 467h184" stroke="#e7d6c5" stroke-width="2" opacity=".28"/>
+  </g>
+  <path d="M0 298c32-26 62-47 95-65 4 66-7 115-32 167H0Z" fill="#344a46"/>
+  <path d="M720 305c-33-26-66-44-103-55 1 56 14 108 42 158h61Z" fill="#3e514b"/>
+  <g fill="none" stroke="#344944" stroke-linecap="round">
+    <path d="M83 395v89M59 427l-28-25M92 416l27-33M73 455l-33-21" stroke-width="5"/>
+    <path d="M647 393v88M671 424l27-25M635 426l-26-24" stroke-width="4"/>
+  </g>
+  <g fill="#2c403c">
+    <path d="M73 81c-17 0-27 10-32 26 18 8 36 3 48-12Z"/>
+    <path d="M91 95c13-11 27-11 41 0-8 19-24 24-46 15Z"/>
+  </g>
+  <rect width="720" height="560" filter="url(#grain)"/>
+</svg>

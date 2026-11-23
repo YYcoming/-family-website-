@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" role="img" aria-labelledby="title desc">
+  <title id="title">热茶时间</title>
+  <desc id="desc">木桌上放着一杯热茶、一本书和一条针织毯</desc>
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d5c7aa"/>
+      <stop offset="1" stop-color="#ab9677"/>
+    </linearGradient>
+    <linearGradient id="table" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a77753"/>
+      <stop offset="1" stop-color="#805a3f"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff3c9" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#f5d48e" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".78" numOctaves="2" stitchTiles="stitch"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .05"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="900" height="680" fill="url(#room)"/>
+  <path d="M0 0h410L180 460H0Z" fill="url(#light)"/>
+  <path d="M0 422c240-53 514-31 900 59v199H0Z" fill="url(#table)"/>
+  <path d="M0 442c261-44 520-23 900 53" fill="none" stroke="#d0a781" stroke-width="3" opacity=".5"/>
+  <g transform="translate(469 261) rotate(-7)">
+    <path d="M0 0h300v330H0Z" fill="#f4e9cd"/>
+    <path d="M14 0h92v330H14Z" fill="#ded7b9"/>
+    <path d="M122 44h143M122 72h113M122 100h136M122 128h120M122 156h143M122 184h102M122 212h137M122 240h109" stroke="#a89e84" stroke-width="4" stroke-linecap="round" opacity=".55"/>
+    <path d="M72 64c31 5 46 25 46 60-31-6-46-26-46-60Z" fill="#9f806d" opacity=".75"/>
+  </g>
+  <g transform="translate(187 305)">
+    <ellipse cx="160" cy="226" rx="166" ry="34" fill="#62462f" opacity=".28" filter="url(#blur)"/>
+    <path d="M29 51c22 8 44 10 65 8l-9 76H34Z" fill="#b76b4b"/>
+    <ellipse cx="57" cy="56" rx="46" ry="19" fill="#d18a69"/>
+    <ellipse cx="57" cy="55" rx="35" ry="11" fill="#f0d5b0"/>
+    <path d="M86 70h133l-22 143H107Z" fill="#f0e7d2"/>
+    <ellipse cx="153" cy="72" rx="72" ry="24" fill="#f9f0dc"/>
+    <ellipse cx="153" cy="72" rx="58" ry="15" fill="#9b6840"/>
+    <path d="M218 92c74-25 104 95 12 108" fill="none" stroke="#f0e7d2" stroke-width="16" stroke-linecap="round"/>
+    <path d="M137 37c-27-31 21-49 0-80M175 40c24-31-20-48 2-78" fill="none" stroke="#f7ecda" stroke-width="7" stroke-linecap="round" opacity=".66"/>
+    <path d="M90 197c31 10 87 13 118 1" fill="none" stroke="#d5b993" stroke-width="2"/>
+  </g>
+  <path d="M655 680c-8-96 30-167 115-215l130 21v194Z" fill="#68735d"/>
+  <path d="M712 680c7-86 37-146 89-181M753 680c13-84 42-138 86-166M795 680c14-69 43-119 81-145" fill="none" stroke="#8c977b" stroke-width="5" opacity=".55"/>
+  <g fill="#e6cf9e">
+    <circle cx="831" cy="326" r="3"/><circle cx="797" cy="217" r="2.5"/><circle cx="382" cy="136" r="2"/>
+  </g>
+  <rect width="900" height="680" filter="url(#grain)"/>
+</svg>
